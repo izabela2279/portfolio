@@ -1,15 +1,11 @@
-import { projects } from "../data/projects"
+import ProjectList from "../components/ProjectList/ProjectList"
 
 function Projects() {
   return (
     <>
       <h1>Projects</h1>
-      <ul>
-      {projects.map(project =>
-        <li id="container" key={project.title}>
-          {project.title}
-        </li>)}
-      </ul>
+      <ProjectList
+      />
     </> 
   )
 }
