@@ -1,6 +1,10 @@
 function Home() {
   return (
-    <h1>Home</h1>
+    <>
+      <img src='./profile.jpg' alt="profile" />
+      <h1>Izabela Szeremeta</h1>
+      <h2>Software Engineer</h2>
+    </>  
   )
 }
 

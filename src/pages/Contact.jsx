@@ -1,7 +1,10 @@
 function Contact() {
   return (
-    <h1>Contact</h1>
-  )
+    <>
+      <h2>Reach out if you'd like to work with me!</h2>
+      <h3>izabelaszeremeta@gmail.com</h3>
+    </>
+  )  
 }
 
 export default Contact
