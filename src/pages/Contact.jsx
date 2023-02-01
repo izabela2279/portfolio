@@ -4,6 +4,4 @@ function Contact() {
   )
 }
 
-export {
-  Contact
-}
+export default Contact
