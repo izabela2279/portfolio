@@ -1,13 +1,16 @@
-import { projects } from "../data/projects"
+import { findProject } from "../utilities/findProject"
+import { useParams } from "react-router-dom"
 
 function ProjectDetails() {
+  const { projectDetails } = useParams()
+  const project = findProject(projectDetails)
   return (
     <>
-      <h1>{projects[0].title}</h1>
-      <p>{projects[0].description}</p>
-      <img src={projects[0].image} alt='img'/>
-      <button>{projects[0].repositoryLink}</button>
-      <button>{projects[0].deploymentLink}</button>
+      <h1>{project.title}</h1>
+      <p>{project.description}</p>
+      <img src="/logo192.png" alt='img'/>
+      <a href="https://github.com/izabela2279/quiz-game.git">GitHub</a>
+      <a href="https://espresso-quiz.netlify.app/">Deployed Site</a>
     </> 
   )
 }

@@ -1,6 +1,8 @@
-import ProjectList from "../ProjectList/ProjectList"
+import { Link } from "react-router-dom"
+import { hyphenateWords } from "../../utilities/hyphenateWords"
 
 function ProjectPreview(props) {
+  console.log(props);
   return (
     <>
       <img
@@ -8,7 +10,10 @@ function ProjectPreview(props) {
         alt={props.title}
       />
       <section>
-        {props.title}     
+        <h1>{props.title}</h1>  
+        <Link to={`/projects/${props.title}`}>  
+        <button>More Details</button>
+        </Link> 
       </section>
     </> 
   )
