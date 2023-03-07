@@ -1,0 +1,10 @@
+nav {
+  text-decoration: none;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  text-align: right;
+  text-decoration: none;
+}
