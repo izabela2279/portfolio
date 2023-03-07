@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 
 function ProjectPreview(props) {
-  console.log(props);
   return (
     <>
       <img
