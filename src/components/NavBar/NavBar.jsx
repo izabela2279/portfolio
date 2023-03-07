@@ -4,7 +4,9 @@ import './NavBar.css';
 function NavBar() {
   return (
     <nav>
+      <h1>
       <Link to="/">Izabela Szeremeta</Link>
+      </h1>
       <ul>
         <li>
           <Link to="/about">About</Link>
