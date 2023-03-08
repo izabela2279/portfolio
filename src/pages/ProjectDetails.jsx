@@ -6,12 +6,13 @@ function ProjectDetails() {
   const project = findProject(projectDetails)
   return (
     <section>
+      <h1>Project Details</h1>
       <h1>{project.title}</h1>
       <p>{project.description}</p>
-      <p> image={project.image}</p>
-      <a href="https://github.com/izabela2279/quiz-game.git">GitHub</a>
-      <a href="https://espresso-quiz.netlify.app/">Deployed Site</a>
-    </section> 
+      <img src={project.image} alt={project.title}/>
+      <a href={project.repositoryLink}>GitHub</a>
+      <a href={project.deploymentLink}>Deployed Site</a>
+    </section>
   )
 }
 

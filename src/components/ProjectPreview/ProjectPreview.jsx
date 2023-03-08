@@ -9,7 +9,7 @@ function ProjectPreview(props) {
         alt={props.title}
       />
       <section>
-        <h1>{props.title}</h1>  
+        <h1>{props.title}</h1> 
         <Link to={`/projects/${hyphenateWords(props.title)}`}>  
         <button>More Details</button>
         </Link> 
