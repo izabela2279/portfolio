@@ -6,7 +6,6 @@ function ProjectDetails() {
   const project = findProject(projectDetails)
   return (
     <section>
-      <h1>Project Details</h1>
       <h1>{project.title}</h1>
       <p>{project.description}</p>
       <img src={project.image} alt={project.title}/>
